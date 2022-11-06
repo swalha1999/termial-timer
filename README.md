@@ -2,7 +2,7 @@
 
 # installion
     
-    `pip install pyfiglet`
+    pip install pyfiglet
 
 
 
