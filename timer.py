@@ -26,7 +26,11 @@ def timer():
             os.system('clear')
             mins, secs = 0 , 0
             mins, secs = divmod(get_time, 60)
-            timer = '{:02d} : {:02d}'.format(mins, secs)
+            if mins >= 60:
+                hours, mins = divmod(mins, 60)
+                timer = '{:02d} : {:02d} : {:02d}'.format(hours,mins, secs)
+            else:
+                timer = '{:02d} : {:02d}'.format(mins, secs)
             assciArt = pyfiglet.figlet_format(timer, font=font, width= 1000)
             print_centered(assciArt) 
             time.sleep(1)
