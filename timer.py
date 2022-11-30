@@ -1,8 +1,8 @@
-import pyfiglet
-import time
 import os
-import shutil
 import sys
+import shutil
+import time
+import pyfiglet
 
 def print_centered(text):
     #str.center( x ) is a method that returns a copy of the string centered in a string of length x
